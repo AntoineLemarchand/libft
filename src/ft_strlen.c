@@ -6,8 +6,16 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:20:40 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/16 23:20:45 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/17 00:13:50 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_strlen(char *str)
+{
+	int	i;
 
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
