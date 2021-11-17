@@ -23,7 +23,7 @@ SRCS	= $(addprefix srcs/, \
 		  ft_calloc.c \
 		  ft_strdup.c \
 		  ft_substr.c \
-		  ft_strjoinc.c \
+		  ft_strjoin.c \
 		  ft_strtrim.c \
 		  ft_split.c \
 		  ft_itoa.c \

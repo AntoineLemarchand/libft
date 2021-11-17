@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:23:47 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/17 00:20:21 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/17 12:33:56 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(char *s, char c);
 char	*ft_strrchr(char *s, char c);
-int		ft_strncmp(char *s1, char *s2);
-void	*memchr(void *s, int c, size_t n);
-void	*memcmp(void *s1, void *s2, size_t n);
-char	*strnstr(char *big, char *little, size_t len);
+int		ft_strncmp(char *s1, char *s2, size_t n);
+void	*ft_memchr(void *s, int c, size_t n);
+void	*ft_memcmp(void *s1, void *s2, size_t n);
+char	*ft_strnstr(char *big, char *little, size_t len);
 int		ft_atoi(char *nptr);
-void	*calloc(size_t nmemb, size_t size);
-char	*strdup(char *s);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
