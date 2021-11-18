@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 12:27:53 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 11:27:04 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/18 23:20:53 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include"../includes/libft.h"
 
 char	*ft_strdup(char *s)
 {
