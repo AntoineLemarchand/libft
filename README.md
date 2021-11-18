@@ -4,13 +4,13 @@
 ## Part 1
 |Function|wrote|normed|tested|
 |--------|-----|------|------|
-|ft\_memset|||
-|ft\_bzero|||
-|ft\_calloc|||
-|ft\_memcpy|||
-|ft\_memmove|||
-|ft\_memchr|||
-|ft\_memcmp|||
+|ft\_memset|×|×|×|
+|ft\_bzero|×|×|×|
+|ft\_calloc||||
+|ft\_memcpy|×|×|×|
+|ft\_memmove|×|×||
+|ft\_memchr||||
+|ft\_memcmp||||
 |ft\_strlen|×|×|×|
 |ft\_strdup|×|×|×|
 |ft\_strlcat|×|×||

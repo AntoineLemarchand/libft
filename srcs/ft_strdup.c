@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 12:27:53 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/17 14:22:44 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/18 11:27:04 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ char	*ft_strdup(char *s)
 	while (s[s_len] != '\0')
 		s_len++;
 	i = 0;
-	if (!(dest = malloc((s_len + 1) * sizeof(char))))
+	dest = malloc((s_len + 1) * sizeof(char));
+	if (!dest)
 		return (NULL);
 	while (s[i] != '\0')
 	{
