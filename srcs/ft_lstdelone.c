@@ -6,11 +6,10 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 11:08:11 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 11:08:56 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 11:16:16 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-
 }
