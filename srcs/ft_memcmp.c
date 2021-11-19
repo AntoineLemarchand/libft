@@ -6,11 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:18:10 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 14:15:47 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:38:27 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_memcmp(void *s1, void *s2, unsigned long n)
+#include"libft.h"
+
+int	ft_memcmp(void *s1, void *s2, size_t n)
 {
 	unsigned long	i;
 

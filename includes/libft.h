@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:23:47 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 00:21:53 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:43:29 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,18 @@
 # include<bsd/string.h>
 # include<stdlib.h>
 # include<unistd.h>
-void	*ft_memset(void *s, int c, unsigned long n);
-void	*ft_memcpy(void *dest, void *src, unsigned long n);
-void	*ft_memmove(void *dest, void *src, unsigned long n);
-void	*ft_memchr(void *s, int c, unsigned long n);
-int		ft_memcmp(void *s1, void *s2, unsigned long n);
-void	ft_bzero(void *s, unsigned long n);
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memcpy(void *dest, void *src, size_t n);
+void	*ft_memmove(void *dest, void *src, size_t n);
+void	*ft_memchr(void *s, int c, size_t n);
+int		ft_memcmp(void *s1, void *s2, size_t n);
+void	ft_bzero(void *s, size_t n);
 int		ft_strlen(char *str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -31,12 +37,12 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(char *s, char c);
 char	*ft_strrchr(char *s, char c);
-int		ft_strncmp(char *s1, char *s2, unsigned long n);
-char	*ft_strnstr(char *big, char *little, unsigned long len);
-size_t	ft_strlcpy(char *dest, char *src, unsigned long size);
-size_t	ft_strlcat(char *dest, char *src, unsigned long size);
+int		ft_strncmp(char *s1, char *s2, size_t n);
+char	*ft_strnstr(char *big, char *little, size_t len);
+size_t	ft_strlcpy(char *dest, char *src, size_t size);
+size_t	ft_strlcat(char *dest, char *src, size_t size);
 int		ft_atoi(char *nptr);
-void	*ft_calloc(unsigned long nmemb, unsigned long size);
+void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char *s1, char *s2);
@@ -49,4 +55,13 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **alst, t_list *new);
+int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **alst, t_list *new);
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+void	ft_lstclear(t_list **lst, void (*del)(void*));
+void	ft_lstiter(t_list *lst, void (*f)(void *));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 #endif

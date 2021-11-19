@@ -6,11 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 13:20:46 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 21:52:44 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:42:28 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlcat(char *dest, char *src, unsigned long size)
+#include"libft.h"
+
+unsigned long	ft_strlcat(char *dest, char *src, size_t size)
 {
 	unsigned long	i;
 	unsigned long	dest_len;

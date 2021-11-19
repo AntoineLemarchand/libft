@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:14:43 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/17 12:53:50 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:41:22 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stddef.h>
+#include"libft.h"
 
 char	*ft_strnstr(char *big, char *little, size_t len)
 {

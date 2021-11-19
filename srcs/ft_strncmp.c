@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 11:58:54 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/17 12:44:19 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:40:15 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include"libft.h"
 
 int	ft_strncmp(char *s1, char *s2, size_t n)
 {

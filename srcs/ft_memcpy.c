@@ -6,11 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:22:33 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 11:27:48 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:34:41 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dest, void *src, unsigned long n)
+#include"libft.h"
+
+void	*ft_memcpy(void *dest, void *src, size_t n)
 {
 	unsigned long	i;
 

@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:00:44 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 11:28:03 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:42:06 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stddef.h>
+#include"libft.h"
 
 size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {

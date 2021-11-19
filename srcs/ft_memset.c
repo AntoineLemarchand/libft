@@ -6,11 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:09:08 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 11:17:39 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 10:34:09 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *s, int c, unsigned long n)
+#include"libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned long	i;
 
