@@ -2,7 +2,7 @@
 
 
 ## Part 1
-|Function|wrote|normed|tested|
+|Function|wrote|normed|war machined|
 |--------|-----|------|------|
 |ft\_memset|×|×|×|
 |ft\_bzero|×|×|×|
@@ -29,7 +29,7 @@
 |ft\_tolower|×|×|×|
 
 ## Part 2
-|Function|wrote|normed|tested|
+|Function|wrote|normed|war machined|
 |--------|-----|------|------|
 |ft\_strmapi|×|×|×|
 |ft\_substr|×|×|×|
@@ -44,7 +44,7 @@
 |ft\_putnbr\_fd|×|×|×|
 
 ## Bonus
-|Function|wrote|normed|tested|
+|Function|wrote|normed|war machined|
 |--------|-----|------|------|
 |ft\_lstnew||||
 |ft\_lstdelone||||

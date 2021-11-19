@@ -6,10 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 11:09:03 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 11:12:59 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 11:25:50 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include"libft.h"
+
 void	ft_lstadd_front(t_list **alst, t_list *new)
 {
+	new->next = *alst;
 }

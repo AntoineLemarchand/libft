@@ -36,15 +36,15 @@ SRCS		= $(addprefix srcs/, \
 			  )
 
 BONUS		= $(addprefix srcs/, \
-			  ft_lstnew \
-			  ft_lstadd_front \
-			  ft_lstsize \
-			  ft_lstlast \
-			  ft_lstadd_back \
-			  ft_lstdelone \
-			  ft_lstclear \
-			  ft_lstiter \
-			  ft_lstmap \
+			  ft_lstnew.c \
+			  ft_lstadd_front.c \
+			  ft_lstsize.c \
+			  ft_lstlast.c \
+			  ft_lstadd_back.c \
+			  ft_lstdelone.c \
+			  ft_lstclear.c \
+			  ft_lstiter.c \
+			  ft_lstmap.c \
 			  )
 
 OBJS		= ${SRCS:.c=.o}
@@ -71,7 +71,7 @@ bonus:		${OBJS} ${BONUS_OBJS}
 			ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
 
 clean:	
-			${RM} ${OBJS}
+			${RM} ${OBJS} ${BONUS_OBJS}
 
 fclean:		clean
 			${RM} ${NAME}
