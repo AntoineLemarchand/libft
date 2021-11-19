@@ -46,12 +46,12 @@
 ## Bonus
 |Function|wrote|normed|war machined|
 |--------|-----|------|------|
-|ft\_lstnew||||
-|ft\_lstdelone||||
-|ft\_lstclear||||
-|ft\_lstadd\_front||||
-|ft\_lstadd\_back||||
-|ft\_lstsize||||
-|ft\_lstiter||||
-|ft\_lstmap||||
-|ft\_lstlast||||
+|ft\_lstnew|×|×|×|
+|ft\_lstdelone|×|×|×|
+|ft\_lstclear|×|×|×|
+|ft\_lstadd\_front|×|×|×|
+|ft\_lstadd\_back|×|×|×|
+|ft\_lstsize|×|×|×|
+|ft\_lstiter|×|×|×|
+|ft\_lstmap|×|×|×|
+|ft\_lstlast|×|×|×|
