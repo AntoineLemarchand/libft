@@ -6,70 +6,83 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:23:37 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 00:33:22 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/19 17:42:04 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"../includes/libft.h"
+#include"libft.h"
 
-int	ft_count_word(char const *s, char c)
+static int	ft_count_words(char const *s, char c)
 {
+	int	i;
 	int	count;
 
+	i = 0;
 	count = 0;
-	while (*s)
+	if (s[i] != c)
 	{
-		while (*s == c && *s)
-			s++;
-		if (*s != '\0')
+		count++;
+		i++;
+	}
+	while (s[i] != '\0')
+	{
+		if (s[i] != c && s[i - 1] == c)
 			count++;
-		while (*s != c && *s)
-			s++;
+		i++;
 	}
 	return (count);
 }
 
-char	*ft_worddup(char const *s, char c)
+static int	ft_word_len(char const *s, char c)
 {
-	char	*dest;
-	int		s_len;
+	int	size;
+
+	size = 0;
+	while (s[size] != c)
+		size++;
+	return (size);
+}
+
+static char	*ft_worddup(char const *s, char c)
+{
+	char	*ret;
 	int		i;
 
-	s_len = 0;
-	while (s[s_len] != c && s[s_len])
-		s_len++;
 	i = 0;
-	dest = malloc((s_len + 1) * sizeof(char));
-	if (!dest)
+	ret = malloc(ft_word_len(s, c));
+	if (!ret)
 		return (NULL);
-	while (s[i] != c && s[i])
+	while (s[i] != '\0' && i < ft_word_len(s, c))
 	{
-		dest[i] = s[i];
+		ret[i] = s[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	ret[i] = '\0';
+	return (ret);
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**ret;
-	int		i;
 	int		size;
+	int		i;
 
 	i = 0;
-	size = ft_count_word(s, c);
+	size = ft_count_words(s, c);
 	ret = malloc((size + 1) * sizeof(char *));
 	if (!ret)
 		return (NULL);
-	while (i <= size)
+	while (*s != '\0')
 	{
-		while (*s == c)
-			s++;
-		ret[i] = ft_worddup(s, c);
-		while (*s != c)
-			s++;
+		if ((*s == c) || i == 0)
+		{
+			while (*s == c)
+				s++;
+			if (*s != '\0' && i < size)
+				ret[i++] = ft_worddup(s, c);
+		}
+		s++;
 	}
-	ret[i][0] = 0;
+	ret[i] = NULL;
 	return (ret);
 }
