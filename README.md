@@ -31,17 +31,17 @@
 ## Part 2
 |Function|wrote|normed|self tested|war machined|
 |--------|-----|------|-----------|------------|
-|ft\_strmapi|×|×||×|
+|ft\_strmapi|×|×|×|×|
 |ft\_substr|×|×|×|×|
 |ft\_strjoin|×|×|×|×|
 |ft\_strtrim|×|×|×|×|
 |ft\_split|×|×|×||
 |ft\_itoa|×|×|×|×|
-|ft\_striteri|×|×||×|
-|ft\_putchar\_fd|×|×||×|
-|ft\_putstr\_fd|×|×||×|
-|ft\_putendl\_fd|×|×||×|
-|ft\_putnbr\_fd|×|×||×|
+|ft\_striteri|×|×|×|×|
+|ft\_putchar\_fd|×|×|×|×|
+|ft\_putstr\_fd|×|×|×|×|
+|ft\_putendl\_fd|×|×|×|×|
+|ft\_putnbr\_fd|×|×|×|×|
 
 ## Bonus
 |Function|wrote|normed|self tested|war machined|
