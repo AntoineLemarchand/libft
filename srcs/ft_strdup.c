@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 12:27:53 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 23:20:53 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/20 16:09:13 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strdup(char *s)
 	int		i;
 
 	s_len = 0;
+	if (!s)
+		return (NULL);
 	while (s[s_len] != '\0')
 		s_len++;
 	i = 0;

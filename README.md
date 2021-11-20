@@ -12,21 +12,21 @@
 |ft\_memchr|×|×||×|
 |ft\_memcmp|×|×||×|
 |ft\_strlen|×|×|×|×|
-|ft\_strdup|×|×||×|
+|ft\_strdup|×|×|×|×|
 |ft\_strlcat|×|×||×|
 |ft\_strlcpy|×|×||×|
-|ft\_strchr|×|×||×|
-|ft\_strrchr|×|×||×|
-|ft\_strnstr|×|×||×|
+|ft\_strchr|×|×|×|×|
+|ft\_strrchr|×|×|×|×|
+|ft\_strnstr|×|×|×|×|
 |ft\_strncmp|×|×|×|×|
 |ft\_atoi|×|×|×|×|
-|ft\_isalpha|×|×||×|
-|ft\_isdigit|×|×||×|
-|ft\_isalnum|×|×||×|
-|ft\_isascii|×|×||×|
-|ft\_isprint|×|×||×|
-|ft\_toupper|×|×||×|
-|ft\_tolower|×|×||×|
+|ft\_isalpha|×|×|×|×|
+|ft\_isdigit|×|×|×|×|
+|ft\_isalnum|×|×|×|×|
+|ft\_isascii|×|×|×|×|
+|ft\_isprint|×|×|×|×|
+|ft\_toupper|×|×|×|×|
+|ft\_tolower|×|×|×|×|
 
 ## Part 2
 |Function|wrote|normed|self tested|war machined|
