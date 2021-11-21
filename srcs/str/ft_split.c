@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:23:37 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/21 11:28:59 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:18:30 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ static void	ft_free_split(char **split)
 	free(split);
 }
 
-static int 	ft_fill_split(char const *s, char c, char **splitted, int size)
+static int	ft_fill_split(char const *s, char c, char **splitted, int size)
 {
 	int	i;
 

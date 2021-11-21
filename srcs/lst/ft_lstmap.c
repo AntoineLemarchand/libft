@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 12:10:57 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/21 20:12:42 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/21 20:18:01 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static void	ft_free_lstmap(t_list *lst)
 {
-	t_list *curr;
-	t_list *next;
+	t_list	*curr;
+	t_list	*next;
 
 	curr = lst;
 	next = curr->next;
