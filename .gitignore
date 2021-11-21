@@ -1,2 +1,4 @@
 /libft-war-machine/
 /test_suite/
+*.swp
+*.swo
