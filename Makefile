@@ -48,7 +48,7 @@ PUT			= $(addprefix put/, \
 			  )
 
 
-BONUS		= $(addprefix srcs/lst/, \
+LST			= $(addprefix srcs/lst/, \
 			  ft_lstnew.c \
 			  ft_lstadd_front.c \
 			  ft_lstsize.c \
@@ -78,9 +78,9 @@ RM			= rm -f
 
 CC			= gcc
 
-CFLAGS		= -g -Wall -Wextra -Werror -I includes -c
+CFLAGS		= -Wall -Wextra -Werror -I includes -c
 
-.c.o:
+%.c%.o:
 			${CC} ${CFLAGS} $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
