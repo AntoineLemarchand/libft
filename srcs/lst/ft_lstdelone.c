@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 11:08:11 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 11:42:19 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/21 22:05:58 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	void	*tmp;
-
-	tmp = lst->content;
-	del(lst);
-	free(tmp);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }

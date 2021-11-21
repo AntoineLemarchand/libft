@@ -6,13 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 12:10:57 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/21 20:18:01 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/21 23:37:32 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-static void	ft_free_lstmap(t_list *lst)
+static void	ft_free_lstmap(t_list *lst, void (*del)(void *))
 {
 	t_list	*curr;
 	t_list	*next;
@@ -21,7 +21,7 @@ static void	ft_free_lstmap(t_list *lst)
 	next = curr->next;
 	while (curr->next)
 	{
-		free(curr->content);
+		del(curr->content);
 		free(curr);
 		curr = next;
 		next = curr->next;
@@ -29,30 +29,33 @@ static void	ft_free_lstmap(t_list *lst)
 	free(lst);
 }
 
+void	ft_lcpy(t_list *s1, t_list *s2, void *(*f)(void *), void (*del)(void *))
+{
+	while (s2->next)
+	{
+		s1->content = f(s2->content);
+		ft_lstadd_back(&s1, malloc(sizeof(t_list)));
+		if (s1->next == NULL)
+		{
+			ft_free_lstmap(s1, del);
+		}
+		s1 = s1->next;
+		s2 = s2->next;
+	}
+}
+
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*ret;
-	t_list	*begin_lst;
 	t_list	*begin_ret;
 
 	ret = malloc(sizeof(t_list));
+	if (!ret || !lst || !f || !del)
+		return (NULL);
 	begin_ret = ret;
-	begin_lst = lst;
 	f(lst->content);
 	ret->content = lst->content;
 	ft_lstadd_back(&ret, malloc(sizeof(t_list)));
-	while (ret->next)
-	{
-		f(lst->content);
-		ret->content = lst->content;
-		ft_lstadd_back(&ret, malloc(sizeof(t_list)));
-		if (ret->next == NULL)
-		{
-			ft_free_lstmap(ret);
-		}
-		ret = ret->next;
-		lst = lst->next;
-	}
-	ft_lstclear(&begin_lst, del);
+	ft_lcpy(ret, lst, f, del);
 	return (begin_ret);
 }

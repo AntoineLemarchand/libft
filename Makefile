@@ -78,7 +78,7 @@ RM			= rm -f
 
 CC			= gcc
 
-CFLAGS		= -Wall -Wextra -Werror -I includes -c
+CFLAGS		= -Wall -Wextra -Werror -I includes -g -c
 
 %.c%.o:
 			${CC} ${CFLAGS} $< -o ${<:.c=.o}

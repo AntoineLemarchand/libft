@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 11:42:37 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 12:22:00 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/21 23:38:49 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,13 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*curr;
-	t_list	*to_del;
 
-	to_del = *lst;
-	curr = to_del->next;
+	if (!lst || !*lst || !del)
+		return ;
+	curr = *lst;
 	while (curr->next)
 	{
-		ft_lstdelone(to_del, del);
-		to_del = curr;
+		ft_lstdelone(curr, del);
 		curr = curr->next;
 	}
 }
