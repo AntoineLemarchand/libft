@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 23:36:41 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 00:32:18 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/22 15:19:32 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"../includes/libft.h"
+#include"libft.h"
 
 int	ft_get_nsize(int n)
 {

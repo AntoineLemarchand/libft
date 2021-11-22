@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 19:03:02 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/18 21:52:21 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/22 15:19:06 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<../includes/libft.h>
+#include<libft.h>
 
 char	*ft_strjoin(char *s1, char *s2)
 {

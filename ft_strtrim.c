@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 21:38:48 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/20 14:53:16 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/22 15:19:18 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"../includes/libft.h"
+#include"libft.h"
 
 static int	ft_is_in_set(char c, char const *set)
 {
