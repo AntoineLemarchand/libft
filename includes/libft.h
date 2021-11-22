@@ -6,13 +6,12 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:23:47 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 23:44:17 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/22 14:54:13 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include<bsd/string.h>
 # include<stdlib.h>
 # include<unistd.h>
 

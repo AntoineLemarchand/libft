@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 12:10:57 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/21 23:37:32 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/22 14:11:45 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ void	ft_lcpy(t_list *s1, t_list *s2, void *(*f)(void *), void (*del)(void *))
 		s1 = s1->next;
 		s2 = s2->next;
 	}
+	ft_lstadd_back(&s1, malloc(sizeof(t_list)));
+	s1->content = f(s2->content);
 }
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))

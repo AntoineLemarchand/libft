@@ -1,25 +1,20 @@
-MEM			= $(addprefix mem/, \
-			  ft_memset.c \
+MEM			= ft_memset.c \
 			  ft_bzero.c \
 			  ft_memcpy.c \
 			  ft_memmove.c \
 			  ft_memchr.c \
 			  ft_memcmp.c \
-			  ft_calloc.c \
-			  )
+			  ft_calloc.c
 
-CHAR		= $(addprefix char/, \
-			  ft_isalpha.c \
+CHAR		= ft_isalpha.c \
 			  ft_isdigit.c \
 			  ft_isalnum.c \
 			  ft_isascii.c \
 			  ft_isprint.c \
 			  ft_toupper.c \
-			  ft_tolower.c \
-			  )
+			  ft_tolower.c
 
-STR			= $(addprefix str/, \
-			  ft_strlcpy.c \
+STR			= ft_strlcpy.c \
 			  ft_strlcat.c \
 			  ft_strmapi.c \
 			  ft_striteri.c \
@@ -32,24 +27,18 @@ STR			= $(addprefix str/, \
 			  ft_strlen.c \
 			  ft_strchr.c \
 			  ft_strrchr.c \
-			  ft_strncmp.c \
-			)
+			  ft_strncmp.c
 
-NBR			= $(addprefix nbr/, \
-			  ft_atoi.c \
+NBR			= ft_atoi.c \
 			  ft_itoa.c \
-			  )
 
-PUT			= $(addprefix put/, \
-			  ft_putchar_fd.c \
+PUT			= ft_putchar_fd.c \
 			  ft_putstr_fd.c \
 			  ft_putendl_fd.c \
-			  ft_putnbr_fd.c \
-			  )
+			  ft_putnbr_fd.c
 
 
-LST			= $(addprefix srcs/lst/, \
-			  ft_lstnew.c \
+LST			= ft_lstnew.c \
 			  ft_lstadd_front.c \
 			  ft_lstsize.c \
 			  ft_lstlast.c \
@@ -58,15 +47,12 @@ LST			= $(addprefix srcs/lst/, \
 			  ft_lstclear.c \
 			  ft_lstiter.c \
 			  ft_lstmap.c \
-			  )
 
-SRCS		= $(addprefix srcs/, \
-			  ${MEM} \
+SRCS		= ${MEM} \
 			  ${CHAR} \
 			  ${STR} \
 			  ${NBR} \
-			  ${PUT} \
-			  )
+			  ${PUT}
 
 OBJS		= ${SRCS:.c=.o}
 
