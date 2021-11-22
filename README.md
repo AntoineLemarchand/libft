@@ -1,5 +1,4 @@
-# libft
-
+# libft ![norminette](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME_OR_FILE>/badge.svg)
 
 ## Part 1
 |Function|wrote|normed|self tested|war machined|

@@ -14,10 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: Install dependencies
+    - name: Make
+      run: make
+
+    - name: make re
       run: make
       
-    - name: Run check
+    - name: Make Bonus
       run: make bonus
 
   norminette_job:
