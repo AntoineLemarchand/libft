@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 11:53:02 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/17 11:58:06 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/23 10:25:55 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	result;

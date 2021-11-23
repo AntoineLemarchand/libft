@@ -6,11 +6,11 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 12:57:38 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/17 13:20:39 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/23 10:21:46 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(char *s, char c)
+char	*ft_strrchr(const char *s, char c)
 {
 	int	i;
 
@@ -20,7 +20,7 @@ char	*ft_strrchr(char *s, char c)
 	while (i >= 0)
 	{
 		if (s[i] == c)
-			return (s + i);
+			return ((char *)(s + i));
 		i--;
 	}
 	return (0);

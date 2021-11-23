@@ -6,13 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:29:33 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/22 14:33:28 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/23 10:16:29 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-void	*ft_memmove(void *dest, void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned long	i;
 

@@ -18,7 +18,7 @@ jobs:
       run: make
 
     - name: make re
-      run: make
+      run: make re
       
     - name: Make Bonus
       run: make bonus

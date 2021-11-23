@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 23:36:41 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/22 15:19:32 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/23 10:03:14 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,9 @@ char	*ft_itoa(int n)
 	neg = 0;
 	size = ft_get_nsize(n);
 	if (n == 0)
-		return ("0");
+		return (ft_strdup("0"));
 	if (n == -2147483648)
-		return ("-2147483648");
+		return (ft_strdup("-2147483648"));
 	if (n < 0)
 	{
 		neg++;

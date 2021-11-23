@@ -6,21 +6,21 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:14:43 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/20 16:03:36 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/23 10:25:06 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-char	*ft_strnstr(char *big, char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned int	i;
-	unsigned int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
 	if (!little || little[0] == '\0')
-		return (big);
+		return ((char *)big);
 	if (!big || little[0] == '\0')
 		return (NULL);
 	while (big[i] != '\0' && i < len)
@@ -31,7 +31,7 @@ char	*ft_strnstr(char *big, char *little, size_t len)
 			while (little[j] == big[i + j] && little[j] != '\0')
 				j++;
 			if (little[j] == '\0' && (i + j) <= len)
-				return (big + i);
+				return ((char *)(big + i));
 		}
 		i++;
 	}
