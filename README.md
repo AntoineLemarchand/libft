@@ -1,6 +1,5 @@
 # libft
 
-
 ## Part 1
 |Function|wrote|normed|self tested|war machined|
 |--------|-----|------|-----------|------------|
@@ -8,13 +7,13 @@
 |ft\_bzero|×|×|×|×|
 |ft\_calloc|×|×|×|×|
 |ft\_memcpy|×|×|×|×|
-|ft\_memmove|×|×||×|
+|ft\_memmove|×|×|×|×|
 |ft\_memchr|×|×|×|×|
-|ft\_memcmp|×|×||×|
+|ft\_memcmp|×|×|×|×|
 |ft\_strlen|×|×|×|×|
 |ft\_strdup|×|×|×|×|
-|ft\_strlcat|×|×||×|
-|ft\_strlcpy|×|×||×|
+|ft\_strlcat|×|×|×|×|
+|ft\_strlcpy|×|×|×|×|
 |ft\_strchr|×|×|×|×|
 |ft\_strrchr|×|×|×|×|
 |ft\_strnstr|×|×|×|×|
@@ -54,4 +53,4 @@
 |ft\_lstsize|×|×|×|×|
 |ft\_lstiter|×|×|×|×|
 |ft\_lstmap|×|×|×|×|
-|ft\_lstlast|×|×|||
+|ft\_lstlast|×|×|×|×|
