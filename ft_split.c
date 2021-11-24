@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:23:37 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/21 20:18:30 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/24 12:29:02 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	*ft_worddup(char const *s, char c)
 	wordlen = 0;
 	while (s[wordlen] != c)
 		wordlen++;
-	ret = malloc(wordlen * sizeof(char));
+	ret = malloc((wordlen + 1) * sizeof(char));
 	if (!ret)
 		return (NULL);
 	while (s[i] != '\0' && i < wordlen)

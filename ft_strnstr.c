@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 00:14:43 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/23 10:25:06 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/24 10:24:28 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
-	if (!little || little[0] == '\0')
-		return ((char *)big);
-	if (!big || little[0] == '\0')
+	if (big[0] == '\0')
 		return (NULL);
+	if (little[0] == '\0')
+		return ((char *)big);
 	while (big[i] != '\0' && i < len)
 	{
 		j = 0;

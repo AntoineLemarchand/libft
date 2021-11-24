@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 19:03:02 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/22 15:19:06 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/24 12:25:27 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	int		s1_len;
 	int		s2_len;
 
-	if (s1 && s2)
+	if (s1 || s2)
 	{
 		s1_len = ft_strlen(s1);
 		s2_len = ft_strlen(s2);

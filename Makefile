@@ -64,7 +64,7 @@ RM			= rm -f
 
 CC			= gcc
 
-CFLAGS		= -Wall -Wextra -Werror -I . -g
+CFLAGS		= -Wall -Wextra -Werror -I .
 
 %.c%.o:
 			${CC} ${CFLAGS} $< -o ${<:.c=.o}
@@ -73,6 +73,10 @@ ${NAME}:	${OBJS}
 			ar rcs ${NAME} ${OBJS}
 
 all:		${NAME}
+
+so:
+	$(CC) -nostartfiles -fPIC ${CFLAGS} ${SRCS} ${LST}
+	gcc -nostartfiles -shared -o libft.so ${OBJS} $(BONUS_OBJS)
 
 bonus:		${OBJS} ${BONUS_OBJS}
 			ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}

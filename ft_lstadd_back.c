@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 11:26:03 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/21 21:34:35 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/24 10:42:58 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,13 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 {
 	t_list	*end;
 
-	if (!alst || !new)
+	if (!new)
 		return ;
-	end = ft_lstlast(*alst);
-	end->next = new;
+	if (*alst)
+	{
+		end = ft_lstlast(*alst);
+		end->next = new;
+	}
+	else 
+		*alst = new;
 }
