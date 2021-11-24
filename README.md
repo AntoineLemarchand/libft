@@ -34,7 +34,7 @@
 |ft\_substr|×|×|×|×|
 |ft\_strjoin|×|×|×|×|
 |ft\_strtrim|×|×|×|×|
-|ft\_split|×|×|×||
+|ft\_split|×|×|×|×|
 |ft\_itoa|×|×|×|×|
 |ft\_striteri|×|×|×|×|
 |ft\_putchar\_fd|×|×|×|×|

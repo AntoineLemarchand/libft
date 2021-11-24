@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:23:37 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/24 12:44:46 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/24 16:58:33 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,9 @@ static int	ft_count_words(char const *s, char c)
 	i = 0;
 	count = 0;
 	if (s[i] != c)
-	{
 		count++;
-		i++;
-	}
-	while (s[i] != '\0')
+	i++;
+	while (s[i - 1] && s[i] != '\0')
 	{
 		if (s[i] != c && s[i - 1] == c)
 			count++;
@@ -41,7 +39,7 @@ static char	*ft_worddup(char const *s, char c)
 
 	i = 0;
 	wordlen = 0;
-	while (s[wordlen] != c)
+	while (s[wordlen] && s[wordlen] != c)
 		wordlen++;
 	ret = malloc((wordlen + 1) * sizeof(char));
 	if (!ret)
@@ -70,7 +68,7 @@ static int	ft_fill_split(char const *s, char c, char **splitted, int size)
 	int	i;
 
 	i = 0;
-	while (*s)
+	while (*s && i < size)
 	{
 		if ((*s == c) || i == 0)
 		{
