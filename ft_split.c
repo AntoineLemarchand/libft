@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:23:37 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/24 12:29:02 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/24 12:44:46 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,9 +97,11 @@ char	**ft_split(char const *s, char c)
 	char	**ret;
 	int		size;
 
+	if (!s)
+		return (NULL);
 	size = ft_count_words(s, c);
 	ret = malloc((size + 1) * sizeof(char *));
-	if (!ret || !s)
+	if (!ret)
 		return (NULL);
 	if (ft_fill_split(s, c, ret, size))
 		return (NULL);
