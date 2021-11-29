@@ -74,10 +74,6 @@ ${NAME}:	${OBJS}
 
 all:		${NAME}
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(LST)
-	gcc -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)
-
 bonus:		${OBJS} ${BONUS_OBJS}
 			ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
 

@@ -6,13 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 23:36:41 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/23 10:03:14 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/24 15:04:54 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-int	ft_get_nsize(int n)
+static int	ft_get_nsize(int n)
 {
 	int	size;
 
@@ -25,7 +25,7 @@ int	ft_get_nsize(int n)
 	return (size);
 }
 
-char	*ft_strrev(char *s)
+static char	*ft_strrev(char *s)
 {
 	int	i;
 	int	j;
@@ -44,7 +44,7 @@ char	*ft_strrev(char *s)
 	return (s);
 }
 
-void	ft_make_str(int n, char *s, int neg)
+static void	ft_make_str(int n, char *s, int neg)
 {
 	int		i;
 

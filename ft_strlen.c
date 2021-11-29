@@ -6,12 +6,13 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 23:20:40 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/19 23:45:04 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/29 09:33:18 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include"libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	len;
 

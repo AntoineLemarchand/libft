@@ -6,7 +6,7 @@
 /*   By: alemarch <alemarch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:23:37 by alemarch          #+#    #+#             */
-/*   Updated: 2021/11/24 16:58:33 by alemarch         ###   ########.fr       */
+/*   Updated: 2021/11/25 15:33:23 by alemarch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,17 @@ static char	*ft_worddup(char const *s, char c)
 	return (ret);
 }
 
-static void	ft_free_split(char **split)
+static void	ft_free_split(char **split, int n)
 {
 	int	i;
 
 	i = 0;
-	while (split[i])
+	if (n > 0)
+		n--;
+	while (i < n)
 		free(split[i++]);
 	free(split);
+	split = NULL;
 }
 
 static int	ft_fill_split(char const *s, char c, char **splitted, int size)
@@ -79,7 +82,7 @@ static int	ft_fill_split(char const *s, char c, char **splitted, int size)
 				splitted[i] = ft_worddup(s, c);
 				if (!splitted[i++])
 				{
-					ft_free_split(splitted);
+					ft_free_split(splitted, i);
 					return (1);
 				}
 			}
@@ -95,8 +98,11 @@ char	**ft_split(char const *s, char c)
 	char	**ret;
 	int		size;
 
-	if (!s)
-		return (NULL);
+	if (!s || !s[0])
+	{
+		ret = ft_calloc(1, sizeof(char *));
+		return (ret);
+	}
 	size = ft_count_words(s, c);
 	ret = malloc((size + 1) * sizeof(char *));
 	if (!ret)
