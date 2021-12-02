@@ -26,6 +26,7 @@ STR			= $(addprefix str/, \
 			  	ft_strdup.c \
 			  	ft_substr.c \
 			  	ft_strjoin.c \
+			  	ft_strjoinfree.c \
 			  	ft_strtrim.c \
 			  	ft_strnstr.c \
 			  	ft_split.c \
